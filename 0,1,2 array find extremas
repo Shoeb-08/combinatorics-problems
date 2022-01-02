@@ -1,0 +1,10 @@
+1) a problem where an array can be filled with only 3 numbers i.e 0,1,2 we need to find the total extremas possible. extremas are nothing but middle element 
+greater than left & right element or less than its neighbours.
+
+
+Solution: basically we need to check how many such combos are existing 010, 020, 101,202, 102,201, 212 ,021,120,121 these are the extremas which are possible i.e 10 in total
+then 
+in a an array of  length N how many places can be occupied by these 3 consecutive numbers here (N>3 then only count ) else return 0 , so the number of 3 value placeholders we get
+is (N-2) now once we set this we can fill any spot with any number so that can be done in 3^(N-3) ways 3=0,1,2 (N-3 is remaining blank spaces in array).
+
+                                                  formula = 10*(N-2)*3^(N-3). N=length of the array.
